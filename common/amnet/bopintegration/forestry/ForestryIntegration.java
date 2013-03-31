@@ -1,5 +1,6 @@
 package amnet.bopintegration.forestry;
 
+import amnet.bopintegration.BOPManager;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.liquids.LiquidStack;
@@ -13,24 +14,42 @@ public class ForestryIntegration {
 	}
 	
 	private static void addRecipes() {
-		addFermenterRecipeSapling(new ItemStack(mod_BiomesOPlenty.acaciaSapling));
-		addFermenterRecipeSapling(new ItemStack(mod_BiomesOPlenty.darkSapling));
-		addFermenterRecipeSapling(new ItemStack(mod_BiomesOPlenty.firSapling));
-		addFermenterRecipeSapling(new ItemStack(mod_BiomesOPlenty.holySapling));
-		addFermenterRecipeSapling(new ItemStack(mod_BiomesOPlenty.magicSapling));
-		addFermenterRecipeSapling(new ItemStack(mod_BiomesOPlenty.mangroveSapling));
-		addFermenterRecipeSapling(new ItemStack(mod_BiomesOPlenty.palmSapling));
-		addFermenterRecipeSapling(new ItemStack(mod_BiomesOPlenty.redwoodSapling));
-		addFermenterRecipeSapling(new ItemStack(mod_BiomesOPlenty.willowSapling));
-		addFermenterRecipeSapling(new ItemStack(mod_BiomesOPlenty.redSapling));
-		addFermenterRecipeSapling(new ItemStack(mod_BiomesOPlenty.orangeSapling));
-		addFermenterRecipeSapling(new ItemStack(mod_BiomesOPlenty.pinkSapling));
-		addFermenterRecipeSapling(new ItemStack(mod_BiomesOPlenty.whiteSapling));
-		addFermenterRecipeSapling(new ItemStack(mod_BiomesOPlenty.appleSapling));
-		addFermenterRecipeSapling(new ItemStack(mod_BiomesOPlenty.originSapling));
-		addFermenterRecipeSapling(new ItemStack(mod_BiomesOPlenty.redSapling));
-		addFermenterRecipeSapling(new ItemStack(mod_BiomesOPlenty.yellowSapling));
-		addFermenterRecipeSapling(new ItemStack(mod_BiomesOPlenty.brownSapling));
+		if (BOPManager.checkForField("acaciaSapling"))
+			addFermenterRecipeSapling(new ItemStack(mod_BiomesOPlenty.acaciaSapling));
+		if (BOPManager.checkForField("darkSapling"))
+			addFermenterRecipeSapling(new ItemStack(mod_BiomesOPlenty.darkSapling));
+		if (BOPManager.checkForField("firSapling"))
+			addFermenterRecipeSapling(new ItemStack(mod_BiomesOPlenty.firSapling));
+		if (BOPManager.checkForField("holySapling"))
+			addFermenterRecipeSapling(new ItemStack(mod_BiomesOPlenty.holySapling));
+		if (BOPManager.checkForField("magicSapling"))
+			addFermenterRecipeSapling(new ItemStack(mod_BiomesOPlenty.magicSapling));
+		if (BOPManager.checkForField("mangroveSaplin"))
+			addFermenterRecipeSapling(new ItemStack(mod_BiomesOPlenty.mangroveSapling));
+		if (BOPManager.checkForField("palmSapling"))
+			addFermenterRecipeSapling(new ItemStack(mod_BiomesOPlenty.palmSapling));
+		if (BOPManager.checkForField("redwoodSapling"))
+			addFermenterRecipeSapling(new ItemStack(mod_BiomesOPlenty.redwoodSapling));
+		if (BOPManager.checkForField("willowSapling"))
+			addFermenterRecipeSapling(new ItemStack(mod_BiomesOPlenty.willowSapling));
+		if (BOPManager.checkForField("redSapling"))
+			addFermenterRecipeSapling(new ItemStack(mod_BiomesOPlenty.redSapling));
+		if (BOPManager.checkForField("orangeSapling"))
+			addFermenterRecipeSapling(new ItemStack(mod_BiomesOPlenty.orangeSapling));
+		if (BOPManager.checkForField("pinkSapling"))
+			addFermenterRecipeSapling(new ItemStack(mod_BiomesOPlenty.pinkSapling));
+		if (BOPManager.checkForField("whiteSaplin"))
+			addFermenterRecipeSapling(new ItemStack(mod_BiomesOPlenty.whiteSapling));
+		if (BOPManager.checkForField("appleSapling"))
+			addFermenterRecipeSapling(new ItemStack(mod_BiomesOPlenty.appleSapling));
+		if (BOPManager.checkForField("originSapling"))
+			addFermenterRecipeSapling(new ItemStack(mod_BiomesOPlenty.originSapling));
+		if (BOPManager.checkForField("redSapling"))
+			addFermenterRecipeSapling(new ItemStack(mod_BiomesOPlenty.redSapling));
+		if (BOPManager.checkForField("yellowSapling"))
+			addFermenterRecipeSapling(new ItemStack(mod_BiomesOPlenty.yellowSapling));
+		if (BOPManager.checkForField("brownSapling"))
+			addFermenterRecipeSapling(new ItemStack(mod_BiomesOPlenty.brownSapling));
 	}
 	
 	private static void addFermenterRecipeSapling(ItemStack resource) {
